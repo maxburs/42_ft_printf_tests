@@ -274,7 +274,20 @@ int		main(void)
 	printf("%%\n");
 	ft_printf("%%\n");
 
-	
+	char	*str5;
+	str5 = NULL;
+	asprintf(&str5, "%3c    z", 0);
+	int i;
+
+	i = 0;
+	while (str5[i] != 'z')
+	{
+		ft_putnbr(str5[i]);
+		ft_putchar(' ');
+		i++;
+	}
+	ft_putchar('\n');
+	ft_printf("%#s\n", str5);
 	
 	return (0);
 }
