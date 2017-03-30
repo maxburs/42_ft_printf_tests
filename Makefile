@@ -1,19 +1,6 @@
 NAME = ft_printf.out
 
-CFLAGS = -Wall -Wextra
-ifndef WNOERROR
-	CFLAGS += -Werror
-endif
-ifdef WNOERROR
-	MAKE_ARGS += WNOERROR=1
-endif
-ifdef DEBUG
-	CFLAGS += -g
-	MAKE_ARGS += DEBUG=1
-endif
-ifdef UNICODE
-	MAKE_ARGS += UNICODE=1
-endif
+CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 

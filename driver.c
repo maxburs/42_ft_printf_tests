@@ -289,5 +289,7 @@ int		main(void)
 	ft_putchar('\n');
 	ft_printf("%#s\n", str5);
 	
+	ft_printf("->%*s<-\n->%*.*d<-\n", 10, "hello", 20, 10, 80085);
+
 	return (0);
 }
